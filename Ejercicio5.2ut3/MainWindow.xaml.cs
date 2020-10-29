@@ -10,7 +10,7 @@ namespace Ejercicio5._2ut3
     {
         public MainWindow()
         { int cont = 1;
-           
+            
             InitializeComponent();
             for (int i = 0; i < 3; i++)
             {
@@ -26,7 +26,7 @@ namespace Ejercicio5._2ut3
                     Grid.SetColumn(b,i);
                     Grid.SetRow(b,x);
                         cont++;
-                }
+                } 
             }
 
         }
