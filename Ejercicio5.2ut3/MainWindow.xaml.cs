@@ -12,9 +12,9 @@ namespace Ejercicio5._2ut3
         { int cont = 1;
             
             InitializeComponent();
-            for (int i = 0; i < 3; i++)
+            for (int x = 2; x < 5; x++)
             {
-                for (int x = 2; x < 5; x++)
+                for (int i = 0; i < 3; i++)
                 {
                     Button b = new Button();
                     TextBlock text = new TextBlock();
@@ -23,8 +23,10 @@ namespace Ejercicio5._2ut3
                     viewbox.Child = text;
                     b.Content = viewbox;
                     b.Tag = cont.ToString();
+                    b.Style = (Style)this.Resources["botones"];
                     Grid.SetColumn(b,i);
                     Grid.SetRow(b,x);
+                    grid.Children.Add(b);
                         cont++;
                 } 
             }

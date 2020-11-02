@@ -12,7 +12,7 @@
         MinWidth="250"
         Icon="calc.ico">
     <Window.Resources>
-        <Style TargetType="Button">
+        <Style TargetType="Button" x:Key="botones">
             <Setter Property="Margin"
                     Value="5" />
             <EventSetter Event="Click"
@@ -21,7 +21,7 @@
         </Style>
     </Window.Resources>
 
-    <Grid>
+    <Grid x:Name="grid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
             <ColumnDefinition />
@@ -59,7 +59,8 @@
                 Grid.ColumnSpan="3"
                 Tag="0"
                 Content="0"
-                FontSize="40" />
+                FontSize="40" 
+                Style="{StaticResource botones}"/>
 
 
     </Grid>
